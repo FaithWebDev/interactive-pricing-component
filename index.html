@@ -17,47 +17,62 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Simple, traffic-based pricing</h1>
-      <h4>Sign-up for our 30-day trial. No credit card required.</h3>
-    </header>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <h4>Sign-up for our 30-day trial. No credit card required.</h3>
+      </header>
 
-    <div class="main">
+      <div class="main">
 
-      <div class="main-text">
-        <p>100K Pageviews</p>
+        <div class="main-text">
+          <p>100K Pageviews</p>
 
-        <p>
-        <h1>$16.00 </h1>/month</p>
+          <p>
+          <h1>$16.00 </h1>
+          /month</p>
+        </div>
+
+        <div class="slide-container">
+          <input type='range' min='1' max='100' value='50' id='my-range' class='slider'>
+        </div>
+
+
+        <div class="sub">
+          <p>Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="toggle round"></span>
+          </label>
+          <p>Yearly Billing</p>
+          <p id="discount">25% discount</p>
+        </div>
+
+        <hr id="line-break">
+
+        <footer>
+
+          <div class="footer-left">
+            <div class="footer-left2">
+              <ul>
+                <li>Unlimited websites</li>
+                <li>100% data ownership</li>
+                <li>Email reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <button id="trial-button">Start my trial</button>
+          </div>
+        </footer>
       </div>
 
-      <div class="slide-container">
-        <input type='range' min='1' max='100' value='50' id='my-range' class='slider'>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a target="_blank" href="https://twitter.com/FaithWebDev">Faith</a> - Web Developer.
       </div>
-
-
-      <div class="sub">
-        <p>Monthly Billing</p>
-        <!-- <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label> -->
-        <p>Yearly Billing 25% discount</p>
-      </div>
-
-
-      <footer>
-        <p>Unlimited websites</p>
-        <p>100% data ownership</p>
-        <p>Email reports</p>
-        <button>Start my trial</button>
-      </footer>
-    </div>
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Faith</a>.
     </div>
   </div>
 </body>
