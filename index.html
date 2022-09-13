@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
 
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -27,22 +27,23 @@
       <div class="main">
 
         <div class="main-text">
-          <p>100K Pageviews</p>
+          <p id="page-views">100K Pageviews</p>
 
-          <p>
-          <h1>$16.00 </h1>
-          /month</p>
+
+          <h1 id="price">$</h1>
+          <p id="per-month"> /month</p>
         </div>
 
         <div class="slide-container">
-          <input type='range' min='1' max='100' value='50' id='my-range' class='slider'>
+          <input oninput="setCurrentValues(), applyDiscount(), colorSlider()" type='range' min='1' max='32' value='16'
+            id='my-range' class='slider'>
         </div>
 
 
         <div class="sub">
           <p>Monthly Billing</p>
           <label class="switch">
-            <input type="checkbox">
+            <input onchange="applyDiscount()" type="checkbox" id="toggle-btn">
             <span class="toggle round"></span>
           </label>
           <p>Yearly Billing</p>

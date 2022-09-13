@@ -120,10 +120,11 @@ body {
     color: var(--grayish-blue);
     font-weight: 500;
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 .main-text h1 {
-    margin-right: 15px;
+    margin-right: -70px;
     font-weight: 800 !important;
     color: var(--dark-desaturated-blue);
     text-align: center;
@@ -139,11 +140,12 @@ body {
 }
 
 /* sider */
+/* linear-gradient(90deg, var(--strong-cyan) 60%, var(--light-grayish-blue) 60%) */
 .slider {
     -webkit-appearance: none;
     width: 500px;
     height: 8px;
-    background: linear-gradient(-90deg, var(--light-grayish-blue) 50%, var(--strong-cyan) 30%);
+    background: linear-gradient(90deg, var(--strong-cyan) 60%, var(--strong-cyan) 60%);
     outline: none;
     opacity: .7;
     -webkit-transition: 0.2s;
@@ -175,7 +177,7 @@ body {
 }
 
 .slider::-webkit-slider-thumb:active {
-    cursor: grabbing
+    cursor: grabbing;
 }
 
 /* .slider::-webkit-slider-runnable-track {} */
