@@ -82,21 +82,21 @@ body {
     background-position-x: 50%;
     background-position-y: 40%;
     margin-top: 100px;
-    margin-bottom: ;
+    margin-bottom: 75px;
     position: static;
 }
 
 .header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
 }
 
 .header h4 {
     text-align: center;
     color: var(--grayish-blue);
-    font-size: .95rem;
+    font-size: 1.05rem;
 }
 
 /* main box content */
@@ -128,6 +128,7 @@ body {
     font-weight: 800 !important;
     color: var(--dark-desaturated-blue);
     text-align: center;
+    font-size: 3rem;
 }
 
 .main-text p:first-child {
@@ -137,6 +138,7 @@ body {
     letter-spacing: 1.5px;
     font-size: 15px;
     text-align: center;
+    margin-left: 50px
 }
 
 /* sider */
@@ -315,22 +317,10 @@ footer {
     align-items: center;
     width: inherit;
     justify-content: space-between;
-    padding-top: 15px;
     padding-bottom: 15px;
-    margin-top: 0;
-}
-
-.footer-left {
-    display: flex;
-    flex-direction: column;
-    font-size: 11px;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--grayish-blue);
-    margin-left: 35px;
-}
-
-.footer-right {
-    margin-right: 65px
 }
 
 #trial-button {
@@ -349,9 +339,7 @@ footer {
     cursor: pointer
 }
 
-
-
-.footer-left ul li {
+footer ul li {
     list-style-image: url(images/icon-check.svg);
     padding-left: 10px;
     font-size: 1rem;
@@ -359,8 +347,72 @@ footer {
 
 
 @media screen and (min-device-width: 300px) and (max-device-width: 800px) {
-    .main {
-        width: 500px;
-        height: 350px;
+    body {
+        background-position: center center;
+        background-attachment: fixed;
     }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        margin-top: auto;
+        background-size: 200px;
+        margin-bottom: 0px;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .header h4 {
+        overflow-wrap: break-word;
+        font-size: 1.9rem;
+        line-height: 3.2rem;
+    }
+
+    .main {
+        width: 650px;
+        height: 800px;
+        margin-top: 0px;
+    }
+
+    .main p {}
+
+    .sub {}
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        line-height: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 0;
+    }
+
+    footer ul li {
+        padding: 0;
+    }
+
+    footer button {
+        margin-top: 30px
+    }
+
+
+
+
+
 }
